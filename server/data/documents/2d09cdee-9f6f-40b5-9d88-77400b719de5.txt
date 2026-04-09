@@ -1,0 +1,18 @@
+面向银河麒麟环境的跨平台办公文档在线预览Web组件
+
+一、项目概述
+本项目旨在设计并实现一个面向银河麒麟操作系统环境的跨平台办公文档在线预览Web组件。该组件以浏览器为主要运行环境，采用现代Web技术，实现对多种办公文档格式的在线预览。
+
+二、技术架构
+前端：Vue 3 + Element Plus + TypeScript
+后端：Node.js + Express + SQLite
+文档引擎：OnlyOffice Document Server
+容器化：Docker + Docker Compose
+
+三、核心功能
+1. 多格式文档预览（Word/Excel/PPT/PDF/WPS）
+2. 文档在线编辑与涂画标注
+3. 缩放控制与缩略图导航
+4. 文件上传与下载管理
+5. Web Component封装，可嵌入任意网页
+6. Docker一键部署，兼容银河麒麟V10

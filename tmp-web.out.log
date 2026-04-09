@@ -1,0 +1,33 @@
+
+> doc-preview-component@1.0.0 dev
+> vite --host 127.0.0.1
+
+
+  [32m[1mVITE[22m v6.4.1[39m  [2mready in [0m[1m310[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[2m16:43:42[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.vue[22m
+[2m18:21:08[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m18:50:22[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.vue, /src/components/LoginPage.vue, /src/components/DocViewer.vue, /src/components/UserManagement.vue, /src/components/FileManager.vue, /src/components/DocAiAssistant.vue, /src/components/AiIntegrationPage.vue[22m
+[2m18:51:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m18:52:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m18:55:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m18:57:07[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m18:58:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m19:00:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue[22m
+[2m19:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.vue[22m
+[2m19:29:42[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.vue, /src/components/LoginPage.vue, /src/components/DocViewer.vue, /src/components/UserManagement.vue, /src/components/FileManager.vue, /src/components/DocAiAssistant.vue, /src/components/AiIntegrationPage.vue[22m
+[2m19:29:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/DocViewer.vue[22m
+[2m19:30:00[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/DocViewer.vue[22m
+[2m19:30:32[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/DocViewer.vue[22m
+[2m19:31:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/DocViewer.vue, /src/components/DocViewer.vue?vue&type=style&index=0&scoped=7c88a614&lang.css[22m
+[2m19:33:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/DocViewer.vue, /src/components/DocViewer.vue?vue&type=style&index=0&scoped=7c88a614&lang.css[22m
+[2m19:45:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m20:01:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m20:02:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue[22m
+[2m20:03:00[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue[22m
+[2m20:04:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue[22m
+[2m20:05:03[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue[22m
+[2m20:06:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue, /src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m20:07:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue?vue&type=style&index=0&scoped=c1ac6b95&lang.css[22m
+[2m20:08:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/AiIntegrationPage.vue[22m

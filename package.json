@@ -1,0 +1,102 @@
+{
+  "name": "doc-preview-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "gd-team",
+    "email": "dev@docpreview.local"
+  },
+  "homepage": "https://example.com/doc-preview-desktop",
+  "description": "Electron desktop wrapper for 文档管理组件",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "install:deps": "npm --prefix server install && npm --prefix web-component install",
+    "build:web": "npm --prefix web-component run build",
+    "prepare:server:env": "node -e \"const fs=require('fs'); const src='server/.env'; const dst='server/runtime.env'; if(fs.existsSync(src)){ fs.copyFileSync(src,dst); console.log('copied',src,'->',dst);} else { console.log('skip runtime env copy, server/.env not found'); }\"",
+    "prepare:server": "npm --prefix server install --omit=dev && npm run prepare:server:env",
+    "clean:server:modules": "node -e \"require('fs').rmSync('server/node_modules',{ recursive: true, force: true })\"",
+    "prepare:server:kylin": "npm run clean:server:modules && npm --prefix server ci --omit=dev && npm run prepare:server:env && npm run prepare:backend:runtime:kylin",
+    "prepare:backend:runtime:kylin": "node -e \"const fs=require('fs'); const path=require('path'); if(process.platform!=='linux'){ console.log('skip backend runtime copy on non-linux'); process.exit(0);} const src=process.execPath; const dst=path.join('electron','runtime','linux-x64','node'); fs.mkdirSync(path.dirname(dst),{recursive:true}); fs.copyFileSync(src,dst); fs.chmodSync(dst,0o755); console.log('bundled backend runtime', src, '->', dst);\"",
+    "desktop:dev": "concurrently -k \"npm --prefix web-component run dev\" \"wait-on http-get://localhost:5173 && node electron/run-dev.cjs\"",
+    "desktop:verify:win": "npm run build:web && npm run prepare:server && electron-builder --win dir -c.electronDist=node_modules/electron/dist",
+    "verify:server:node-abi": "node -e \"require('./server/node_modules/better-sqlite3'); console.log('better-sqlite3 node abi check passed');\"",
+    "desktop:verify:kylin": "npm run build:web && npm run prepare:server:kylin && npm run verify:server:node-abi && electron-builder --linux dir",
+    "desktop:pack": "npm run build:web && npm run prepare:server && electron-builder",
+    "desktop:pack:win": "npm run build:web && npm run prepare:server && electron-builder --win nsis -c.electronDist=node_modules/electron/dist",
+    "desktop:pack:win:zip": "npm run build:web && npm run prepare:server && electron-builder --win zip -c.electronDist=node_modules/electron/dist",
+    "desktop:pack:kylin": "npm run build:web && npm run prepare:server:kylin && npm run verify:server:node-abi && electron-builder --linux deb AppImage",
+    "desktop:pack:kylin:deb": "npm run build:web && npm run prepare:server:kylin && npm run verify:server:node-abi && electron-builder --linux deb",
+    "desktop:pack:kylin:appimage": "npm run build:web && npm run prepare:server:kylin && npm run verify:server:node-abi && electron-builder --linux AppImage"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^30.5.1",
+    "electron-builder": "^24.13.3",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.gd.docpreview.desktop",
+    "productName": "文档管理组件",
+    "asar": false,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "electron/**/*",
+      "web-component/dist/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "server",
+        "to": "server",
+        "filter": [
+          "src/**/*",
+          "package.json",
+          "runtime.env",
+          "node_modules/**/*"
+        ]
+      }
+    ],
+    "extraMetadata": {
+      "main": "electron/main.cjs"
+    },
+    "win": {
+      "signAndEditExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "${productName}-${version}-${os}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "category": "Office",
+      "maintainer": "gd-team <dev@docpreview.local>",
+      "artifactName": "${productName}-${version}-${os}-${arch}.${ext}"
+    }
+  }
+}

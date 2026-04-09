@@ -1,0 +1,38 @@
+[2026-04-04T11:01:11.075Z] [INFO] SQLite database initialized at \data\db\docpreview.db
+[2026-04-04T11:01:11.105Z] [INFO] Doc Preview Server running on port 3000
+[2026-04-04T11:01:11.105Z] [INFO] OnlyOffice URL: http://localhost
+[2026-04-04T11:01:11.105Z] [INFO] Storage: C:\Users\huangjin\Desktop\gd\server\data\documents
+[2026-04-04T11:01:47.385Z] [INFO] User logged in: admin
+[2026-04-04T11:01:47.513Z] [INFO] File saved: api_test.txt -> d0a0357b-26c9-42ed-94e7-bef4ef76d552.txt
+[2026-04-04T11:01:47.514Z] [INFO] Upload success: api_test.txt
+[2026-04-04T11:03:36.525Z] [INFO] User logged in: admin
+[2026-04-04T11:03:36.545Z] [INFO] File saved: api_test.txt -> bafec333-7dfa-43ab-9a6a-3281748c8fe0.txt
+[2026-04-04T11:03:36.546Z] [INFO] Upload success: api_test.txt
+[2026-04-04T11:05:02.890Z] [INFO] User logged in: admin
+[2026-04-04T11:05:02.922Z] [INFO] File saved: api_test.txt -> a9cdc2db-7170-40e8-8947-2e6401c9a163.txt
+[2026-04-04T11:05:02.922Z] [INFO] Upload success: api_test.txt
+[2026-04-04T11:05:05.206Z] [INFO] User logged in: admin
+[2026-04-04T11:05:07.166Z] [INFO] File saved: live_preview_test.pdf -> 00fe7909-a116-4176-b681-c1d09fde961a.pdf
+[2026-04-04T11:05:07.166Z] [INFO] Upload success: live_preview_test.pdf
+[2026-04-04T11:06:56.644Z] [INFO] User logged in: admin
+[2026-04-04T11:06:56.649Z] [INFO] File saved: api_test.txt -> 2e4ebcd1-a5cf-47c0-b169-10d82cd72c47.txt
+[2026-04-04T11:06:56.649Z] [INFO] Upload success: api_test.txt
+[2026-04-04T11:06:58.232Z] [INFO] User logged in: admin
+[2026-04-04T11:07:00.189Z] [INFO] File saved: live_preview_test.pdf -> 843bc03e-d782-4eae-b8ec-a8dce3609533.pdf
+[2026-04-04T11:07:00.189Z] [INFO] Upload success: live_preview_test.pdf
+[2026-04-04T11:08:27.111Z] [INFO] User logged in: admin
+[2026-04-04T11:08:27.117Z] [INFO] File saved: api_test.txt -> e1a97866-abac-419b-9e9f-4fb49b1a19fd.txt
+[2026-04-04T11:08:27.117Z] [INFO] Upload success: api_test.txt
+[2026-04-04T11:08:28.719Z] [INFO] User logged in: admin
+[2026-04-04T11:08:30.676Z] [INFO] File saved: live_preview_test.pdf -> 5b38a4b3-051c-4141-be1b-29f09b497a82.pdf
+[2026-04-04T11:08:30.676Z] [INFO] Upload success: live_preview_test.pdf
+[2026-04-04T11:09:48.376Z] [INFO] User logged in: admin
+[2026-04-04T11:09:48.381Z] [INFO] File saved: api_test.txt -> 95f1b4bb-cf23-4014-96c9-93b33354a92b.txt
+[2026-04-04T11:09:48.381Z] [INFO] Upload success: api_test.txt
+[2026-04-04T11:09:49.962Z] [INFO] User logged in: admin
+[2026-04-04T11:09:51.919Z] [INFO] File saved: live_preview_test.pdf -> 5c80657e-6027-423d-a092-fdc0796399ea.pdf
+[2026-04-04T11:09:51.919Z] [INFO] Upload success: live_preview_test.pdf
+[2026-04-04T11:10:00.392Z] [INFO] Callback received for doc 5c80657e-6027-423d-a092-fdc0796399ea, status: 1
+[2026-04-04T11:10:05.132Z] [INFO] Callback received for doc 5c80657e-6027-423d-a092-fdc0796399ea, status: 4
+[2026-04-04T11:10:52.373Z] [INFO] Callback received for doc 6581e05f-0a60-4822-8101-89f6ce18fa1d, status: 1
+[2026-04-04T11:10:57.555Z] [INFO] Callback received for doc 6581e05f-0a60-4822-8101-89f6ce18fa1d, status: 4

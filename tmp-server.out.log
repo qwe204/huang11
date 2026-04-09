@@ -1,0 +1,10 @@
+[2026-04-05T11:37:07.041Z] [INFO] SQLite database initialized at C:\Users\huangjin\Desktop\gd\server\data\db\docpreview.db
+[2026-04-05T11:37:07.201Z] [INFO] Doc Preview Server running on port 3000
+[2026-04-05T11:37:07.206Z] [INFO] OnlyOffice URL: http://host.docker.internal
+[2026-04-05T11:37:07.208Z] [INFO] Storage: C:\Users\huangjin\Desktop\gd\server\data\documents
+[2026-04-05T11:38:58.643Z] [INFO] Callback received for doc e57dad98-9b82-42f7-b0f1-e18bf033d129, status: 1
+[2026-04-05T11:39:00.891Z] [INFO] Callback received for doc e57dad98-9b82-42f7-b0f1-e18bf033d129, status: 4
+[2026-04-05T12:10:52.236Z] [INFO] Generated file saved: 季度经营汇报-20260405-201051.pptx -> 96774810-bcf2-4785-9e41-3e3baaaa3f46.pptx
+[2026-04-05T12:11:54.390Z] [INFO] File saved: 4660766.xlsx -> e7a592f0-51c2-4233-bb80-b9385ebab916.xlsx
+[2026-04-05T12:11:54.394Z] [INFO] Upload success: 4660766.xlsx
+[2026-04-05T12:12:05.913Z] [INFO] Generated file saved: 月度岗位招聘数据异常分析报告-20260405-201205.docx -> 735264d8-cccb-44d4-b26e-f5c0ec180fef.docx
