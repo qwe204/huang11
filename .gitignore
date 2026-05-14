@@ -1,11 +1,1 @@
-/毕业设计（论文任务书 - 副本.doc
-/附件4-1：毕业设计（论文）格式规范.doc
-/附件4-5-1：毕业设计（论文）开题报告.doc
-/附件4-7-1：毕业设计（论文）中期阶段考核表.doc
-.venv/
-.npm-cache-linux/
-.cache/
-.npm-cache/
-*node_modules
-release/
-./electron/runtime/
+
